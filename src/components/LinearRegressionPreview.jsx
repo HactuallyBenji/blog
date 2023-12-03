@@ -3,7 +3,7 @@ import React from "react";
 const LinearRegressionPreview = ({ onClick }) => (
   <div className="border border-gray-300 p-4 cursor-pointer" onClick={onClick}>
     <img
-      src="path-to-thumbnail.jpg"
+      src="./images/linear_regression.png"
       alt="Linear Regression"
       className="w-full h-40 object-cover mb-2"
     />
