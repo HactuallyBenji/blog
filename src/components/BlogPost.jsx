@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogPost = ({ post, onClick }) => (
   <div
-    className="border border-gray-300 p-4 cursor-pointer"
+    className="border border-gray-300 p-4 cursor-pointer hover:border-gray-500 rounded-md"
     onClick={() => onClick(post)}
   >
     <img
