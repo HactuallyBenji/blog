@@ -1,6 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
+import "./App.css";
+import Header from "./components/Header";
+import BlogList from "./components/BlogList";
+import Modal from "./components/Modal";
+import Footer from "./components/Footer";
+import posts from "./data";
+import { useState } from "react";
 
 function App() {
   const [selectedPost, setSelectedPost] = useState(null);
