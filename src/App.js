@@ -4,38 +4,39 @@ import BlogList from "./components/BlogList";
 import LinearRegressionPost from "./components/LinearRegressionPost";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
+import MultiClassClassificationPost from "./components/MultiClassClassificationPost";
 import posts from "./data";
 import { useState } from "react";
 
 function App() {
-  const [selectedPost, setSelectedPost] = useState(null);
-  const [showLinearRegression, setShowLinearRegression] = useState(false);
+  const [activePost, setActivePost] = useState(null);
 
-  const openPost = (post) => {
-    setSelectedPost(post);
-  };
-
-  const openLinearRegression = () => {
-    setShowLinearRegression(true);
+  const openModal = (postType) => {
+    setActivePost(postType);
   };
 
   const closeModal = () => {
-    setSelectedPost(null);
-    setShowLinearRegression(false);
+    setActivePost(null);
+  };
+
+  const renderModalContent = () => {
+    switch (activePost) {
+      case "linearRegression":
+        return <LinearRegressionPost onClose={closeModal} />;
+      case "multi-classClassification":
+        return <MultiClassClassificationPost onClose={closeModal} />;
+      default:
+        return null;
+    }
   };
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow p-4">
-        <BlogList
-          posts={posts}
-          onClick={openPost}
-          onLinearRegressionClick={openLinearRegression}
-        />
+        <BlogList onPostClick={openModal} />
       </main>
-      {selectedPost && <Modal post={selectedPost} onClose={closeModal} />}
-      {showLinearRegression && <LinearRegressionPost />}
+      {activePost && <Modal onClose={closeModal}>{renderModalContent()}</Modal>}
       <Footer />
     </div>
   );
