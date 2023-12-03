@@ -1,15 +1,9 @@
-import Button from './Button';
+import React from 'react';
 
-const Header = () => {
-  return (
-    <>
-    <nav className="flex justify-center p-5">
-      <Button text="Social Media" />
-      <Button text="Email Marketing" />
-      <Button text="About Me" />
-    </nav>
-    </>
-  );
-}
+const Header = () => (
+  <header className="bg-gray-800 text-white p-4">
+    <h1 className="text-xl font-bold">My Personal Blog</h1>
+  </header>
+);
 
 export default Header;
