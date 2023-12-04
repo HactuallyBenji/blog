@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import MultiClassClassificationPost from "./components/MultiClassClassificationPost";
 import posts from "./data";
 import { useState } from "react";
+import ABTestAnalysis from "./components/ABTestAnalysis";
 
 function App() {
   const [activePost, setActivePost] = useState(null);
@@ -25,6 +26,8 @@ function App() {
         return <LinearRegressionPost onClose={closeModal} />;
       case "multi-classClassification":
         return <MultiClassClassificationPost onClose={closeModal} />;
+      case "ABTestAnalysis":
+        return <ABTestAnalysis onClose={closeModal} />;
       default:
         return null;
     }
