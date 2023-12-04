@@ -4,17 +4,24 @@ import HeaderImage from "./HeaderImage";
 
 const MultiClassClassificationPost = ({ onClose }) => {
   return (
-    <div>
-      <HeaderImage
-        imgSource="./images/multi-class_classification.png"
-        alt="Linear Regression"
-        onClose={onClose}
-      />
-      <h1>Understanding Multi-class classification</h1>
-      <p>... Your introduction and explanation ...</p>
-      <LinearRegressionGraph />
-      <p>... Further explanation ...</p>
-    </div>
+    <>
+      <div className="absolute flex justify-center items-center top-4 left-4 w-20">
+        <HeaderImage
+          imgSource="./images/linear_regression.png"
+          alt="AB Testing"
+          onClose={onClose}
+        />
+      </div>
+      <div className="h-screen">
+        <div className="h-[10%]"></div>
+        <div className="h-[90%] flex justify-center items-end">
+          <iframe
+            src="./frames/Ad_click_ab_test.html"
+            className="h-full w-11/12"
+          ></iframe>
+        </div>
+      </div>
+    </>
   );
 };
 
