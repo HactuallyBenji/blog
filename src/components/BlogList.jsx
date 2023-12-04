@@ -1,7 +1,7 @@
 import React from "react";
-import BlogPost from "./BlogPost";
 import LinearRegressionPreview from "./LinearRegressionPreview";
 import MultiClassClassificationPreview from "./MultiClassClassificationPreview";
+import ABTestAnalysisPreview from "./ABTestAnalysisPreview";
 
 const BlogList = ({ onPostClick }) => (
   <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -9,6 +9,7 @@ const BlogList = ({ onPostClick }) => (
     <MultiClassClassificationPreview
       onClick={() => onPostClick("multi-classClassification")}
     />
+    <ABTestAnalysisPreview onClick={() => onPostClick("ABTestAnalysis")} />
   </div>
 );
 
