@@ -1,5 +1,4 @@
 import React from "react";
-import LinearRegressionGraph from "./LinearRegressionGraph";
 import HeaderImage from "./HeaderImage";
 
 const MultiClassClassificationPost = ({ onClose }) => {
