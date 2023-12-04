@@ -1,5 +1,4 @@
 import React from "react";
-import LinearRegressionGraph from "./LinearRegressionGraph";
 import HeaderImage from "./HeaderImage";
 
 const LinearRegressionPost = ({ onClose }) => {
@@ -16,6 +15,7 @@ const LinearRegressionPost = ({ onClose }) => {
         <div className="h-[10%]"></div>
         <div className="h-[90%] flex justify-center items-end">
           <iframe
+            title="Linear Regression"
             src="./frames/Ad_click_ab_test.html"
             className="h-full w-11/12"
           ></iframe>

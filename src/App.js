@@ -5,7 +5,6 @@ import LinearRegressionPost from "./components/LinearRegressionPost";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
 import MultiClassClassificationPost from "./components/MultiClassClassificationPost";
-import posts from "./data";
 import { useState } from "react";
 import ABTestAnalysis from "./components/ABTestAnalysis";
 

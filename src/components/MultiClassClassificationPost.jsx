@@ -16,6 +16,7 @@ const MultiClassClassificationPost = ({ onClose }) => {
         <div className="h-[10%]"></div>
         <div className="h-[90%] flex justify-center items-end">
           <iframe
+            title="Multi-class Classification with Softmax"
             src="./frames/Ad_click_ab_test.html"
             className="h-full w-11/12"
           ></iframe>
