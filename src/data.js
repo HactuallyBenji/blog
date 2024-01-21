@@ -24,7 +24,7 @@ const posts = [
     title: "An AB Test Analysis",
     excerpt: "An exploration of AB test analysis in data science",
     content: "This is content that we might not need, not sure yet",
-    thumbnail: "images/Ad_click_ab_test.png",
+    thumbnail: "images/ab_test_analysis.png",
     frame: "./frames/Ad_click_ab_test.html",
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
   },
