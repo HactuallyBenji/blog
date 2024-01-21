@@ -1,6 +1,6 @@
 const posts = [
   {
-    id: 1,
+    id: "linear_regression",
     title: "Understanding Linear Regression",
     excerpt: "An exploration of linear regression in data science",
     content:
@@ -10,7 +10,7 @@ const posts = [
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
   },
   {
-    id: 2,
+    id: "multi_class_classification",
     title: "Second Post",
     excerpt: "This is the second post.",
     content:
@@ -20,7 +20,7 @@ const posts = [
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
   },
   {
-    id: 3,
+    id: "AB_test_analysis",
     title: "An AB Test Analysis",
     excerpt: "An exploration of AB test analysis in data science",
     content: "This is content that we might not need, not sure yet",
@@ -29,7 +29,7 @@ const posts = [
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
   },
   {
-    id: 4,
+    id: "softmax_regression",
     title: "Softmax Regression",
     excerpt: "An exploration of softmax regression in data science",
     content: "This is content that we might not need, not sure yet",
