@@ -1,13 +1,11 @@
 import "./App.css";
 import Header from "./components/Header";
 import BlogList from "./components/BlogList";
-import LinearRegressionPost from "./components/LinearRegressionPost";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
-import MultiClassClassificationPost from "./components/MultiClassClassificationPost";
 import { useState } from "react";
-import ABTestAnalysis from "./components/ABTestAnalysis";
-import SoftmaxRegressionPost from "./components/SoftmaxRegressionPost";
+import Post from "./components/Post";
+import posts from "./data";
 
 function App() {
   const [activePost, setActivePost] = useState(null);
@@ -21,18 +19,8 @@ function App() {
   };
 
   const renderModalContent = () => {
-    switch (activePost) {
-      case "linearRegression":
-        return <LinearRegressionPost onClose={closeModal} />;
-      case "multi-classClassification":
-        return <MultiClassClassificationPost onClose={closeModal} />;
-      case "ABTestAnalysis":
-        return <ABTestAnalysis onClose={closeModal} />;
-      case "softmaxRegression":
-        return <SoftmaxRegressionPost onClose={closeModal} />;
-      default:
-        return null;
-    }
+    const postData = posts.filter((post) => post.id === activePost)[0];
+    return <Post post={postData} />;
   };
 
   return (
