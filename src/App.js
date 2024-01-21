@@ -20,7 +20,7 @@ function App() {
 
   const renderModalContent = () => {
     const postData = posts.filter((post) => post.id === activePost)[0];
-    return <Post post={postData} />;
+    return <Post post={postData} onClose={closeModal} />;
   };
 
   return (
