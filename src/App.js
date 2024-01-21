@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import MultiClassClassificationPost from "./components/MultiClassClassificationPost";
 import { useState } from "react";
 import ABTestAnalysis from "./components/ABTestAnalysis";
+import SoftmaxRegressionPost from "./components/SoftmaxRegressionPost";
 
 function App() {
   const [activePost, setActivePost] = useState(null);
@@ -27,6 +28,8 @@ function App() {
         return <MultiClassClassificationPost onClose={closeModal} />;
       case "ABTestAnalysis":
         return <ABTestAnalysis onClose={closeModal} />;
+      case "softmaxRegression":
+        return <SoftmaxRegressionPost onClose={closeModal} />;
       default:
         return null;
     }

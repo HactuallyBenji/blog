@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinearRegressionPreview = ({ post, onClick }) => (
+const SoftmaxRegressionPreview = ({ post, onClick }) => (
   <div className="border border-gray-300 p-4 cursor-pointer" onClick={onClick}>
     <img
       src={post.thumbnail}
@@ -12,4 +12,4 @@ const LinearRegressionPreview = ({ post, onClick }) => (
   </div>
 );
 
-export default LinearRegressionPreview;
+export default SoftmaxRegressionPreview;

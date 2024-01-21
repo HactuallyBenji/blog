@@ -24,9 +24,18 @@ const posts = [
     title: "An AB Test Analysis",
     excerpt: "An exploration of AB test analysis in data science",
     content: "This is content that we might not need, not sure yet",
-    thumbnail: "image/Ad_click_ab_test.html",
+    thumbnail: "images/Ad_click_ab_test.png",
     frame: "./frames/Ad_click_ab_test.html",
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
+  },
+  {
+    id: 4,
+    title: "Softmax Regression",
+    excerpt: "An exploration of softmax regression in data science",
+    content: "This is content that we might not need, not sure yet",
+    thumbnail: "images/softmax_regression.png",
+    frame: "./frames/softmax_regression.html",
+    youtube: "",
   },
   // Add more posts here
 ];
