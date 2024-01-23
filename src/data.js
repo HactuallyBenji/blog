@@ -9,16 +9,16 @@ const posts = [
     frame: "./frames/linear_regression.html",
     youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
   },
-  {
-    id: "multi_class_classification",
-    title: "Second Post",
-    excerpt: "This is the second post.",
-    content:
-      "Full content of the second post about multi-class classification.",
-    thumbnail: "/images/multi-class_classification.png",
-    frame: "./frames/Ad_click_ab_test.html",
-    youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
-  },
+  // {
+  //   id: "multi_class_classification",
+  //   title: "Second Post",
+  //   excerpt: "This is the second post.",
+  //   content:
+  //     "Full content of the second post about multi-class classification.",
+  //   thumbnail: "/images/multi-class_classification.png",
+  //   frame: "./frames/Ad_click_ab_test.html",
+  //   youtube: "https://www.youtube.com/embed/wDE6o8VHA0Q?si=fjdibp7avec3UwpH",
+  // },
   {
     id: "AB_test_analysis",
     title: "An AB Test Analysis",
