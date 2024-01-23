@@ -13,7 +13,7 @@ const Post = ({ post, onClose }) => {
       </div>
       <div className="h-screen">
         <div className="h-[10%]"></div>
-        <div className="h-[90%] flex justify-center items-end">
+        <div className="h-[90%] flex flex-wrap justify-center items-end">
           <iframe
             title={post.title}
             src={post.frame}

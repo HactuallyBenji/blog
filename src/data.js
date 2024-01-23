@@ -35,7 +35,7 @@ const posts = [
     content: "This is content that we might not need, not sure yet",
     thumbnail: "images/softmax_regression.png",
     frame: "./frames/softmax_regression.html",
-    youtube: "",
+    youtube: null,
   },
   // Add more posts here
 ];
